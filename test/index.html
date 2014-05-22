@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="bower_components/mocha/mocha.css">
 </head>
 <body>
+
+    <input type="text" class="die-sides">
+    <button class="create-die">Create Die</button>
+   
+
+
     <div id="mocha"></div>
     <script src="bower_components/mocha/mocha.js"></script>
     <script>mocha.setup('bdd')</script>
@@ -18,10 +24,11 @@
     </script>
 
     <!-- include source files here... -->
-
+    <script src="bower_components/jquery/jquery.js"></script>
+    <script src="scripts/main.js"></script>
     <!-- include spec files here... -->
+    <script src="bower_components/jquery/jquery.js"></script>
     <script src="spec/test.js"></script>
-    <script src="bower_components/jquery/dist/jquery.js"></script>
 
     <script>window.mochaPhantomJS ? mochaPhantomJS.run() : mocha.run()</script>
 </body>
