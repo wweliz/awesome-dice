@@ -19,7 +19,7 @@ body {
     min-height: 500px;
     width: 960px;
     margin: 0 auto;
-    background-color: #E5E4E2;
+    background-color: white;
     padding: 2px;
     border: solid 1px #726E6D;
 
@@ -29,16 +29,11 @@ body {
     }
 }
 
-.input-fields {
-    display: inline-block;
-}
-
-
 // Styling number input fields
 input[type=number] {
-    background-color: #E5E4E2;
+    background-color: white;
     padding: 2px;
-    margin: 8px;
+    margin: 4px;
     border: solid 1px #726E6D;
 }
 
@@ -56,7 +51,8 @@ input[type=submit] {
     color: #34282C;
     font-family: Arial, Sans-Serif;
     line-height: 12px;
-    height: 30px;
+    height: 27px;
+    margin-top: 9px;
     text-decoration: none;
 
     &:hover {background-color:#D1D0CE;}
@@ -66,3 +62,20 @@ input[type=submit] {
         top:1px;
     }
 }
+
+.input-fields div {
+    vertical-align: top;
+    display: inline-block;
+    margin: 10px 12px 0 0;
+
+    & p {margin: 0;}
+
+    &.roll-dice, &.reset {
+    margin-top: 18px;
+    }
+}
+
+.what-you-can-enter {
+    margin-top: 10px;
+}
+
