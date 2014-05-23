@@ -21,7 +21,7 @@
       });
  
     });
- /////////////////////DIE CONTRUCTOR
+/////////////////////DIE CONTRUCTOR
     describe("Die Constructor", function(){
  
     	it("Should add a 'sides' property to instances to determine how many sides each die has.", function(){
@@ -61,8 +61,8 @@ describe('Reset Button', function() {
 
 	$('.reset').click();
 
-	it('should set input-of-sides input field to empty', function() {
-		expect($('.input-of-sides').val()).to.equal();
+	it('should set input-number-of-sides input field to empty', function() {
+		expect($('.input-number-of-sides').val()).to.be('');
 	})
 
 	it('should set input-how-many-dice input field to empty', function() {
@@ -74,3 +74,32 @@ describe('Reset Button', function() {
 	})
 })
 })();
+
+// Test that random number displays inside randomnumber div
+describe('RandNumDisplay', function() {
+	
+	$('.randomnumber').text();
+
+	it('should display each number generated in its own randomnumber div', function() {
+		expect(randomnumber).val().to.equal();
+		})
+})
+
+// functions
+
+function random_number(min,max) {
+
+    return (Math.round((max-min) * Math.random() + min));
+}
+
+function create_non_unique_random_array(num_dice,min,max) {
+
+    var nums = new Array;
+
+    for (var dice=0; dice<num_dice; dice++) {
+        nums[dice] = random_number(min,max);
+    }
+
+    return (nums);
+}
+
