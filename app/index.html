@@ -28,32 +28,35 @@
 						<h1>Fun with Dice</h3>
 				</div>
 
-				<div class="dice-container"><div class="randomnumber">text</div>
-					<div class="die-box">words here</div>
-				</div>
+				<div class="dice-container"></div>
 
 				<!-- setting the type to number limits the input value to whole numbers (no negative numbers, no fractions) -->
 				<!-- min sets the smallest number you can enter -->
 				<!-- max sets the largest number you can enter -->
 				<!-- size of 2 gives the input field a width of 2 characters -->
 			<div class="input-fields">
+				
 				<div class="sides">
 					<p>How many sides?</p>
-					<input class="input-#of-sides" type="number" min="4" max="6"/>
+					<input class="input-number-of-sides" type="number" min="4" max="6"/>
 				</div>
+
 				<div class="how-many-dice">
 					<p>How many dice?</p>
 					<input class="input-how-many-dice" type="number" min="1" max="12"/>
 				</div>
+
 				<div class="roll-dice">
 					<input type="submit" value="Roll Dice"/>
 				</div>
+
 				<div class="reset">
 					<input type="submit" value="Reset"/>
 				</div>
+
 			</div> <!-- closes input-fields div -->
 
-			<p class="what-you-can-enter">All dice mucst have between four and six sides.<br>You can roll a maximum of twelve dice at a time.</p>
+			<p class="what-you-can-enter">All dice must have between four and six sides.<br>You can roll a maximum of twelve dice at a time.</p>
 
 			</div> <!-- closes main-container div -->
 
