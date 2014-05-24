@@ -6,15 +6,28 @@ describe('Reset Button', function() {
 
 	$('.reset').click();
 
-	it('should set input-of-sides input field to empty', function() {
-    expect($('.input-of-sides').val()).to.equal();
-	})
+	it('should set input-number-of-sides input field to empty', function() {
+ 	expect($('.input-number-of-sides').val()).to.equal();
+
+ 	})
 
 	it('should set input-how-many-dice input field to empty', function() {
 		expect($('.input-how-many-dice').val()).to.equal();
 	})
 
 })
+
+// Test reset button to clear dice-container
+ describe('Reset Button', function() {
+ 	
+ 	$('.box1').val(34);
+  
+ 	$('.reset').click();
+ 	
+	it('should set dice-container val to empty', function() {
+ 		expect($('.dice-container').val()).to.equal();
+ 	})
+ })
 
 //Random Array Generator
 describe('Random Array Generator', function(){
