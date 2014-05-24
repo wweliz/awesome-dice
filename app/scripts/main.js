@@ -12,7 +12,7 @@ $('.roll-dice').click(function(){
 	var howMany = $('.input-how-many-dice').val();
   var sides = $('.input-number-of-sides').val();
 	var gameDie = new Game(sides,howMany);
-		console.log(gameDie);
+	;
 });
 
 // Generate Individual Random Number
@@ -28,12 +28,6 @@ function generateArray(numDice,minDiceSides,maxDiceSides) {
 }
 
 // not sure if we need the below function -- will need to change die-box name
-$('.create-die').click(function(){
-	var howMany = $('.die-box').val();
-  	var sides = $('.die-box').val();
-  	gameDie = new Die(sides);
-
-});
 
 // Reset Button Function
 $('.reset').click(function() {
@@ -44,7 +38,7 @@ $('.reset').click(function() {
 
 // not sure if we need the below function either
 randomArray.forEach(function(number) {
-	 console.log(number);
+	 
 	 $('.dice-container').append('<div class="box1">'+ number +'</div>');
 });
 
