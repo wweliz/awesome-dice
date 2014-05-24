@@ -9,6 +9,7 @@ function Game (sides,howMany) {
 
 // Roll Dice Button
 $('.roll-dice').click(function(){
+  $('.dice-container').empty();
 	var howMany = $('.input-how-many-dice').val();
   var sides = $('.input-number-of-sides').val();
 	var gameDie = new Game(sides,howMany);
@@ -31,7 +32,7 @@ function generateArray(numDice,minDiceSides,maxDiceSides) {
 
 // Reset Button Function
 $('.reset').click(function() {
-  $('.input-of-sides').val('');
+  $('.input-number-of-sides').val('');
   $('.input-how-many-dice').val('');
   $('.dice-container').empty();
 });
