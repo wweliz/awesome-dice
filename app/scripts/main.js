@@ -27,6 +27,22 @@ function generateArray(numDice,minDiceSides,maxDiceSides) {
     randomArray[dice] = randomNumber(minDiceSides,maxDiceSides);
 }
 
+// not sure if we need the below function -- will need to change die-box name
+$('.create-die').click(function(){
+	var howMany = $('.die-box').val();
+  	var sides = $('.die-box').val();
+  	gameDie = new Die(sides);
+
+});
+
+// Reset Button Function
+$('.reset').click(function() {
+  $('.input-of-sides').val('');
+  $('.input-how-many-dice').val('');
+  $('.dice-container').empty();
+});
+
+// not sure if we need the below function either
 randomArray.forEach(function(number) {
 	 console.log(number);
 	 $('.dice-container').append('<div class="box1">'+ number +'</div>');
@@ -35,10 +51,3 @@ randomArray.forEach(function(number) {
 	return (randomArray);
 
 }
-
-// Reset Button
-$('.reset').click(function() {
-  $('.input-of-sides').val('');
-  $('.input-how-many-dice').val('');
-  $('.die-box').val('');
-});
