@@ -61,16 +61,16 @@ describe('Reset Button', function() {
 
 	$('.reset').click();
 
-	it('should set input-#of-sides input field to empty', function() {
-		expect($('.input-#of-sides').val()).to.be('');
+	it('should set input-of-sides input field to empty', function() {
+		expect($('.input-of-sides').val()).to.equal();
 	})
 
 	it('should set input-how-many-dice input field to empty', function() {
-		expect($('.input-how-many-dice').val()).to.contain('');
+		expect($('.input-how-many-dice').val()).to.equal();
 	})
 
 	it('should set die-box to empty', function() {
-		expect($('.die-box').val()).to.contain('');
+		expect($('.die-box').val()).to.empty();
 	})
 })
 })();

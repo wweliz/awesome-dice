@@ -14,4 +14,14 @@ $('.create-die').click(function(){
 	var howMany = $('die-box').val();
   	var sides = $('.die-box').val();
   	gameDie = new Die(sides);
-})
+
+});
+
+
+// Reset Button Function
+$('.reset').click(function() {
+  $('.input-of-sides').val('');
+  $('.input-how-many-dice').val('');
+  $('.dice-container').empty();
+});
+
